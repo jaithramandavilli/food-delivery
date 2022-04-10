@@ -164,8 +164,8 @@ https://templatemo.com/tm-558-klassy-cafe
             
            
         </table>
-     <table align="center"  bgcolor="skyblue"  height="40 !important" width="1200">
-        <tr align="center">
+     <table align="center"  bgcolor="skyblue"  height="40 !important" width="1200"  style="padding:30px;border:3px solid white">
+        <tr align="center"  bgcolor="#2E86C1" >
             <th style="padding:30px;">Food Name</th>
             <th style="padding:30px">Price</th>
             <th style="padding:30px">quantity</th>
@@ -177,7 +177,7 @@ https://templatemo.com/tm-558-klassy-cafe
             @csrf
             
         @foreach($data as $data)
-        <tr align="center">
+        <tr align="center"  style="padding:30px;border:3px solid white">
             <td style="padding:30px" ><input type="text" name="foodname[]" value="{{$data->Title}}" hidden="">{{$data->Title}}</td>
             <td style="padding:30px" ><input type="text" name="price[]" value="{{$data->Price}}" hidden="">{{$data->Price}}</td>
             <td style="padding:30px" ><input type="text" name="quantity[]" value="{{$data->quantity}}" hidden="">{{$data->quantity}}</td>
@@ -185,11 +185,11 @@ https://templatemo.com/tm-558-klassy-cafe
         @endforeach
     </table>
     <table align="center" bgcolor="skyblue" height="40 !important" width="100">
-        <tr align="center">
+        <tr align="center" bgcolor="#2E86C1" style="padding:30px;border:3px solid white">
             <th style="padding:30px;">Action</th>
         </tr>
         @foreach($data2 as $data2)
-        <tr align="center">
+        <tr align="center"  style="padding:30px;border:3px solid white" style="padding:30px;border:3px solid white">
         <td  style="padding:23px;margin-bottom:43px"><a href="{{url('/remove',$data2->id)}}" class="btn btn-warning">Remove</a></td>
         </tr>
         @endforeach
@@ -217,8 +217,8 @@ https://templatemo.com/tm-558-klassy-cafe
     </div>
     <div align="center" style="padding:10px;">
        
-        <input class="btn btn-success" style="background-color: blue" type="submit" value="Confirm Order">    
-        <button id="close" type="button" style="background-color: blue" class="btn btn-danger">Close</button>
+        <input class="btn btn-success" style="background-color: green" type="submit" value="Confirm Order">    
+        <button id="close" type="button" style="background-color: red" class="btn btn-danger">Close</button>
     </div>
     
     
